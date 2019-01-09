@@ -16,5 +16,25 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
+
 </ul>
+<!-- <button (click)="getAllMealTypes()">Get All Meal Types</button> -->
+    <select>
+      <option value="0">--Select--</option>
+      <option *ngFor="let mealType of mealTypes" value="{{ mealType.MealTypeId }}">
+          {{ mealType.Description }}
+
+      </option>
+    </select>
+
+<!-- <button (click)="getMealType(1)">Get Breakfast</button>
+<ul *ngIf="singleMealType">
+  <li>
+    {{ singleMealType.MealTypeId }}
+  </li>
+
+</ul> -->
+
+
+
 
