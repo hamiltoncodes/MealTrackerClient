@@ -3,11 +3,11 @@ import { MealTypeService } from '../meal-selector/shared/meal-type.service';
 import { MealType } from '../meal-selector/shared/mealtype';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-meal-selector',
   templateUrl: './meal-selector.component.html',
   styleUrls: ['./meal-selector.component.css']
 })
-export class AppComponent {
+export class MealSelectorComponent {
   title = 'Meal Tracker';
   mealTypes: MealType[];
   mealType: MealType;
